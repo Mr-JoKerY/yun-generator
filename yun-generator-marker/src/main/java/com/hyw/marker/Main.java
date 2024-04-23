@@ -1,15 +1,15 @@
 package com.hyw.marker;
 
-import com.hyw.marker.cli.CommandExecutor;
+import com.hyw.marker.generator.main.MainGenerator;
+import freemarker.template.TemplateException;
+
+import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) {
-//        args = new String[]{"generate", "-l", "-a", "-o"};
-//        args = new String[]{"config"};
-//        args = new String[]{"list"};
-        CommandExecutor commandExecutor = new CommandExecutor();
-        commandExecutor.doExecute(args);
+    public static void main(String[] args) throws TemplateException, IOException, InterruptedException {
+        MainGenerator mainGenerator = new MainGenerator();
+        mainGenerator.doGenerate();
     }
 
 }
