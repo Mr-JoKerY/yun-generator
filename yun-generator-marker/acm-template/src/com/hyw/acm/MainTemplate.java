@@ -1,4 +1,4 @@
-package templates;
+package com.hyw.acm;
 
 import java.util.Scanner;
 
