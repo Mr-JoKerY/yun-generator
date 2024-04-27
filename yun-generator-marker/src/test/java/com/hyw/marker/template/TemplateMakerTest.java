@@ -18,7 +18,7 @@ public class TemplateMakerTest {
      * 测试同配置多次生成时，强制变为静态生成
      */
     @Test
-    public void testMakeTemplateBug1() {
+    public void testMakeTemplateBug() {
         Meta meta = new Meta();
         meta.setName("acm-template-generator");
         meta.setDescription("ACM 示例模板生成器");
@@ -43,7 +43,7 @@ public class TemplateMakerTest {
         List<TemplateMakerModelConfig.ModelInfoConfig> modelInfoConfigList = Arrays.asList(modelInfoConfig1);
         templateMakerModelConfig.setModels(modelInfoConfigList);
 
-        long id = TemplateMaker.makeTemplate(meta, originProjectPath, templateMakerFileConfig, templateMakerModelConfig, 1784223512610250752L);
+        long id = TemplateMaker.makeTemplate(meta, originProjectPath, templateMakerFileConfig, templateMakerModelConfig, null, 1784223512610250752L);
         System.out.println(id);
     }
 
@@ -56,11 +56,15 @@ public class TemplateMakerTest {
         String configStr = ResourceUtil.readUtf8Str(rootPath + "templateMaker.json");
         TemplateMakerConfig templateMakerConfig = JSONUtil.toBean(configStr, TemplateMakerConfig.class);
         long id = TemplateMaker.makeTemplate(templateMakerConfig);
-        System.out.println(id);
 
         configStr = ResourceUtil.readUtf8Str(rootPath + "templateMaker1.json");
         templateMakerConfig = JSONUtil.toBean(configStr, TemplateMakerConfig.class);
         TemplateMaker.makeTemplate(templateMakerConfig);
+
+        configStr = ResourceUtil.readUtf8Str(rootPath + "templateMaker2.json");
+        templateMakerConfig = JSONUtil.toBean(configStr, TemplateMakerConfig.class);
+        TemplateMaker.makeTemplate(templateMakerConfig);
+
         System.out.println(id);
     }
 }
