@@ -1,0 +1,652 @@
+{
+    "name": "springboot-init-generator",
+    "description": "Spring Boot 模板项目生成器",
+    "fileConfig": {
+        "sourceRootPath": "G:/Code/Java/Projects/real/generator/yun-generator/yun-generator-marker/.temp/1/springboot-init",
+        "files": [
+            {
+                "type": "group",
+                "condition": "needPost",
+                "groupKey": "post",
+                "groupName": "帖子文件组",
+                "files": [
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/esdao/PostEsDao.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/esdao/PostEsDao.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/resources/mapper/PostFavourMapper.xml.ftl",
+                        "outputPath": "src/main/resources/mapper/PostFavourMapper.xml",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/resources/mapper/PostMapper.xml.ftl",
+                        "outputPath": "src/main/resources/mapper/PostMapper.xml",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/job/cycle/IncSyncPostToEs.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/job/cycle/IncSyncPostToEs.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/controller/PostThumbController.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/controller/PostThumbController.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/mapper/PostFavourMapper.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/mapper/PostFavourMapper.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/model/dto/postfavour/PostFavourQueryRequest.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/model/dto/postfavour/PostFavourQueryRequest.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/mapper/PostMapper.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/mapper/PostMapper.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/model/entity/Post.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/model/entity/Post.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/model/dto/post/PostUpdateRequest.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/model/dto/post/PostUpdateRequest.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/model/dto/post/PostQueryRequest.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/model/dto/post/PostQueryRequest.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/model/entity/PostFavour.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/model/entity/PostFavour.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/controller/PostFavourController.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/controller/PostFavourController.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/model/entity/PostThumb.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/model/entity/PostThumb.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/mapper/PostThumbMapper.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/mapper/PostThumbMapper.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/controller/PostController.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/controller/PostController.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/service/PostService.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/service/PostService.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/service/impl/PostServiceImpl.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/service/impl/PostServiceImpl.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/model/vo/PostVO.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/model/vo/PostVO.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/model/dto/postthumb/PostThumbAddRequest.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/model/dto/postthumb/PostThumbAddRequest.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/service/PostThumbService.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/service/PostThumbService.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/model/dto/post/PostEsDTO.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/model/dto/post/PostEsDTO.java",
+                        "type": "file",
+                        "generateType": "dynamic",
+                        "condition": "needPost && needEs"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/service/impl/PostFavourServiceImpl.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/service/impl/PostFavourServiceImpl.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/model/dto/post/PostEditRequest.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/model/dto/post/PostEditRequest.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/service/PostFavourService.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/service/PostFavourService.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/model/dto/postfavour/PostFavourAddRequest.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/model/dto/postfavour/PostFavourAddRequest.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/job/once/FullSyncPostToEs.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/job/once/FullSyncPostToEs.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/service/impl/PostThumbServiceImpl.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/service/impl/PostThumbServiceImpl.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/java/com/hyw/project/model/dto/post/PostAddRequest.java.ftl",
+                        "outputPath": "src/main/java/com/hyw/project/model/dto/post/PostAddRequest.java",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    },
+                    {
+                        "inputPath": "src/main/resources/mapper/PostThumbMapper.xml.ftl",
+                        "outputPath": "src/main/resources/mapper/PostThumbMapper.xml",
+                        "type": "file",
+                        "generateType": "dynamic"
+                    }
+                ]
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/wxmp/handler/MessageHandler.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/wxmp/handler/MessageHandler.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/wxmp/WxMpMsgRouter.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/wxmp/WxMpMsgRouter.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/exception/ThrowUtils.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/exception/ThrowUtils.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/model/enums/FileUploadBizEnum.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/model/enums/FileUploadBizEnum.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "sql/create_table.sql",
+                "outputPath": "sql/create_table.sql",
+                "type": "file",
+                "generateType": "static"
+            },
+            {
+                "inputPath": "doc/swagger.png",
+                "outputPath": "doc/swagger.png",
+                "type": "file",
+                "generateType": "static"
+            },
+            {
+                "inputPath": "src/main/resources/application-prod.yml.ftl",
+                "outputPath": "src/main/resources/application-prod.yml",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/MainApplication.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/MainApplication.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/exception/BusinessException.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/exception/BusinessException.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/common/DeleteRequest.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/common/DeleteRequest.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/config/JsonConfig.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/config/JsonConfig.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/utils/SqlUtils.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/utils/SqlUtils.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/controller/FileController.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/controller/FileController.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/config/WxOpenConfig.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/config/WxOpenConfig.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "pom.xml.ftl",
+                "outputPath": "pom.xml",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/controller/UserController.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/controller/UserController.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/constant/CommonConstant.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/constant/CommonConstant.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/model/vo/LoginUserVO.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/model/vo/LoginUserVO.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/aop/LogInterceptor.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/aop/LogInterceptor.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/mapper/UserMapper.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/mapper/UserMapper.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "sql/post_es_mapping.json",
+                "outputPath": "sql/post_es_mapping.json",
+                "type": "file",
+                "generateType": "static"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/model/dto/user/UserRegisterRequest.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/model/dto/user/UserRegisterRequest.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/common/BaseResponse.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/common/BaseResponse.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/utils/NetUtils.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/utils/NetUtils.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/resources/application-test.yml",
+                "outputPath": "src/main/resources/application-test.yml",
+                "type": "file",
+                "generateType": "static"
+            },
+            {
+                "inputPath": "README.md",
+                "outputPath": "README.md",
+                "type": "file",
+                "generateType": "static"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/model/enums/UserRoleEnum.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/model/enums/UserRoleEnum.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/model/dto/file/UploadFileRequest.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/model/dto/file/UploadFileRequest.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/wxmp/WxMpConstant.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/wxmp/WxMpConstant.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/manager/CosManager.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/manager/CosManager.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/model/dto/user/UserLoginRequest.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/model/dto/user/UserLoginRequest.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/resources/mapper/UserMapper.xml.ftl",
+                "outputPath": "src/main/resources/mapper/UserMapper.xml",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/resources/application.yml.ftl",
+                "outputPath": "src/main/resources/application.yml",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/wxmp/handler/EventHandler.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/wxmp/handler/EventHandler.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/constant/UserConstant.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/constant/UserConstant.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/config/CosClientConfig.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/config/CosClientConfig.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": ".gitignore",
+                "outputPath": ".gitignore",
+                "type": "file",
+                "generateType": "static"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/model/dto/user/UserAddRequest.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/model/dto/user/UserAddRequest.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/constant/FileConstant.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/constant/FileConstant.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/common/ErrorCode.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/common/ErrorCode.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/resources/banner.txt",
+                "outputPath": "src/main/resources/banner.txt",
+                "type": "file",
+                "generateType": "static"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/config/MyBatisPlusConfig.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/config/MyBatisPlusConfig.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/config/CorsConfig.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/config/CorsConfig.java",
+                "type": "file",
+                "generateType": "dynamic",
+                "condition": "needCors"
+            },
+            {
+                "inputPath": "src/main/resources/META-INF/additional-spring-configuration-metadata.json",
+                "outputPath": "src/main/resources/META-INF/additional-spring-configuration-metadata.json",
+                "type": "file",
+                "generateType": "static"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/model/entity/User.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/model/entity/User.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/service/impl/UserServiceImpl.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/service/impl/UserServiceImpl.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/wxmp/handler/SubscribeHandler.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/wxmp/handler/SubscribeHandler.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/annotation/AuthCheck.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/annotation/AuthCheck.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/model/dto/user/UserQueryRequest.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/model/dto/user/UserQueryRequest.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/exception/GlobalExceptionHandler.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/exception/GlobalExceptionHandler.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/utils/SpringContextUtils.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/utils/SpringContextUtils.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/model/vo/UserVO.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/model/vo/UserVO.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/common/ResultUtils.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/common/ResultUtils.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "Dockerfile",
+                "outputPath": "Dockerfile",
+                "type": "file",
+                "generateType": "static"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/model/dto/user/UserUpdateRequest.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/model/dto/user/UserUpdateRequest.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/model/dto/user/UserUpdateMyRequest.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/model/dto/user/UserUpdateMyRequest.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/service/UserService.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/service/UserService.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/controller/WxMpController.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/controller/WxMpController.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/common/PageRequest.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/common/PageRequest.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/hyw/project/aop/AuthInterceptor.java.ftl",
+                "outputPath": "src/main/java/com/hyw/project/aop/AuthInterceptor.java",
+                "type": "file",
+                "generateType": "dynamic"
+            }
+        ]
+    },
+    "modelConfig": {
+        "models": [
+            {
+                "type": "MysqlConfig",
+                "description": "用于生成MySQL数据库配置",
+                "groupKey": "mysqlConfig",
+                "groupName": "MySQL数据库配置",
+                "models": [
+                    {
+                        "fieldName": "password",
+                        "type": "String",
+                        "description": "密码",
+                        "defaultValue": "123456"
+                    },
+                    {
+                        "fieldName": "url",
+                        "type": "String",
+                        "description": "地址",
+                        "defaultValue": "jdbc:mysql://localhost:3306/my_db"
+                    },
+                    {
+                        "fieldName": "username",
+                        "type": "String",
+                        "description": "用户名",
+                        "defaultValue": "root"
+                    }
+                ]
+            },
+            {
+                "type": "DocsConfig",
+                "description": "用于生成接口文档配置",
+                "groupKey": "docsConfig",
+                "groupName": "接口文档配置",
+                "models": [
+                    {
+                        "fieldName": "description",
+                        "type": "String",
+                        "description": "接口文档描述",
+                        "defaultValue": "springboot-init"
+                    },
+                    {
+                        "fieldName": "title",
+                        "type": "String",
+                        "description": "接口文档标题",
+                        "defaultValue": "接口文档"
+                    },
+                    {
+                        "fieldName": "version",
+                        "type": "String",
+                        "description": "接口文档版本",
+                        "defaultValue": "1.0"
+                    }
+                ],
+                "condition": "needDocs"
+            },
+            {
+                "fieldName": "needDocs",
+                "type": "boolean",
+                "description": "是否开启接口文档功能",
+                "defaultValue": true
+            },
+            {
+                "fieldName": "needPost",
+                "type": "boolean",
+                "description": "是否开启帖子功能",
+                "defaultValue": true
+            },
+            {
+                "fieldName": "needCors",
+                "type": "boolean",
+                "description": "是否开启跨域功能",
+                "defaultValue": true
+            },
+            {
+                "fieldName": "needEs",
+                "type": "boolean",
+                "description": "是否开启ES功能",
+                "defaultValue": true
+            },
+            {
+                "fieldName": "basePackage",
+                "type": "String",
+                "description": "基础包名",
+                "defaultValue": "com.hyw"
+            },
+            {
+                "fieldName": "needRedis",
+                "type": "boolean",
+                "description": "是否开启Redis功能",
+                "defaultValue": true
+            }
+        ]
+    }
+}
