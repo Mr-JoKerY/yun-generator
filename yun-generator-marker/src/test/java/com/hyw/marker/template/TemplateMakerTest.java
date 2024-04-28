@@ -48,7 +48,7 @@ public class TemplateMakerTest {
     }
 
     /**
-     * 使用 JSON 制作模板
+     * 制作 SpringBoot 模板
      */
     @Test
     public void makeSpringBootTemplateWithJSON() {
